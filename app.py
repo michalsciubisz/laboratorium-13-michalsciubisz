@@ -21,6 +21,8 @@ def bubble_sort(lst: list):
     :param lst: lista która ma zostać posortowana
     :return lst: funkcja zwraca posortowaną listę 
     '''
+    if not isinstance(lst, list):
+        return None
     n = len(lst)
     for _ in range(n):
         for j in range(n-1):
